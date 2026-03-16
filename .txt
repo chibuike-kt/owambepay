@@ -1,0 +1,49 @@
+STAGE 1 — Foundation
+  feat: initialise Next.js + TypeScript + Tailwind project
+  feat: initialise Laravel 11 API project
+  feat: configure MySQL and Redis connections
+  feat: add Laravel Reverb and configure broadcast driver
+  feat: add Horizon for queue management
+
+STAGE 2 — Auth & Users
+  feat: user registration with phone + OTP
+  feat: JWT authentication via Laravel Sanctum
+  feat: KYC status field and middleware gate
+
+STAGE 3 — Wallet System
+  feat: wallet creation on user registration
+  feat: wallet funding via Paystack webhook
+  feat: credit conversion service (kobo → spray credits)
+  feat: wallet transaction log with before/after balance
+  test: wallet cannot go negative (pessimistic lock)
+
+STAGE 4 — Spray Sessions
+  feat: host creates session with QR code generation
+  feat: session state machine (PENDING → ACTIVE → ENDED)
+  feat: guest joins session via code or link
+  feat: session escrow table and hold logic
+
+STAGE 5 — Spray Engine
+  feat: spray endpoint with server-side rate limiting
+  feat: wallet debit → escrow credit atomic transaction
+  feat: continuous spray mode with per-second cap
+  feat: session settlement job (escrow → host wallet)
+  test: concurrent spray stress test
+
+STAGE 6 — Realtime
+  feat: SprayEvent broadcast via Reverb
+  feat: LeaderboardUpdated broadcast
+  feat: Laravel Echo setup on Next.js client
+
+STAGE 7 — Animation Engine
+  feat: Matter.js banknote physics canvas
+  feat: spray trajectory and gravity model
+  feat: note type variants (₦200 / ₦500 / ₦1000)
+  feat: confetti burst on milestone amounts
+
+STAGE 8 — UI
+  feat: host screen with live rain view
+  feat: guest spray panel with balance display
+  feat: leaderboard widget
+  feat: QR code join screen
+  feat: big screen mode (kiosk layout)
