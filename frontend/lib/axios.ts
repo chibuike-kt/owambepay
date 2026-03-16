@@ -7,8 +7,8 @@ const axios = Axios.create({
     "Content-Type": "application/json",
     Accept: "application/json",
   },
-  withCredentials: true, // sends cookies cross-origin
-  withXSRFToken: true, // Axios handles XSRF token automatically
+  withCredentials: true,
+  withXSRFToken: true,
 });
 
 export default axios;

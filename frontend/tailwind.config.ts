@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["var(--font-inter)", "Inter", "sans-serif"],
         mono: ["ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
@@ -42,7 +42,7 @@ const config: Config = {
         "2xl": "28px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(0,0,0,.04), 0 4px 20px rgba(0,0,0,.04)",
+        card: "0 1px 2px rgba(0,0,0,.04), 0 4px 20px rgba(0,0,0,.05)",
         sm: "0 1px 3px rgba(0,0,0,.06)",
       },
     },
